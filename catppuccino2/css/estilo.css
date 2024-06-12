@@ -1,0 +1,285 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+	background-color: pink;
+	font-family: cursive;
+	max-width: 1024px;
+}
+
+header {
+	position: relative;
+	background-repeat: repeat;
+	/*background: 50px 50px;
+	max-width: 100%;
+	object-fit: contain;
+	/*background: linear-gradient(#FFBABA, #FCE5E5);*/
+	background-image: url(../img/teste.jpg);
+	/*background-size: 300px 300px;*/
+	background-size: 20%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+.menu2_opcoes {
+	margin: 0;
+	padding: 0;
+}
+.menu2_opcoes a {
+	color: black;
+	text-decoration: none;
+	
+}
+a:hover {
+	opacity: 1.0;	
+}
+
+.logo {
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing:4px;
+}
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items:center ;
+	font-family: cursive;
+	background: pink;
+	height: 10vh;
+}
+@media (min-width: 900px) 
+{
+.menu-content{
+	max-width: 800px;
+	margin: 0 auto;
+	display: block;
+}
+.list-menu{
+	display: flex!important;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px purple;
+}
+.itemdomenu{
+	flex: auto;
+	 padding: 15px;
+    color: black;
+    display: block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center
+}
+.itemdomenu hover{
+color: hotpink;
+background: black;
+
+}
+.navegacao-mobile {
+    display: none!important;
+  }
+
+
+  .menu-content ul li {
+	display: inline;
+	padding: 5px;
+	margin-left: 5px;
+	border-right: 3px dashed #FF99CC;
+	text-align: center;
+}
+
+.menu2_opcoes li:last-child{
+	border-right: none;
+	text-align: center;
+}
+
+.menu2_opcoes a{
+	text-align: center;
+	text-decoration:none;
+	font-family: cursive;
+	color: black;
+	padding: 2vw 3vh; 
+}
+
+.menu2_opcoes li a:hover{
+	border-top: 4px solid #FF99CC;
+  border-bottom: 4px solid #FF99CC;
+  padding: 6px 0; 
+}
+
+}
+
+.navegacao-mobile {
+  background: pink;
+  padding: 10px;
+  display: block;
+  width: 53px;
+  cursor: pointer;
+  margin-top: -25px;
+
+}
+.input-menu-all {
+  display: none!important;
+}
+.linha-menu {
+  width: 25px;
+  height: 3px;
+  border-radius: 5px;
+  background: #555;
+  margin: 4px;
+  display: block;
+}
+
+.list-menu {
+  display: none;
+   width: 100%;
+   background:transparent;
+   box-shadow:none;
+}
+.itemdomenu {
+    flex: auto;
+  }
+  .itemdomenu .link-menu {
+    padding: 15px;
+    color: black;
+    display: relative;
+    transition: 0.7s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+.input-menu-all:checked ~ .list-menu {
+       display: block;
+      
+}
+.input-menu-all:checked ~ .list-menu .link-menu  {
+  text-align: left;
+}
+
+
+
+@media (max-width: 899px){
+	body{
+		overflow-x: hidden;
+		width: 100%;
+}
+.menu-content {
+	position: absolute;
+}
+.menu-content ul li {	
+	padding: 5px;
+	margin-left: 2px #ffccd5;
+	border-bottom:4px dashed #ffccd5 ;
+	background-color: #ffe6ea;
+
+}
+.menu2_opcoes a{
+	text-align: center;
+	text-decoration:none;
+	font-family: cursive;
+	color: black;
+	padding: 2vw 3vh; 
+}
+.menu-content a:hover{
+	border-top: 4px ;
+  border-bottom: 4px ;
+  padding: 6px 0; 
+  color: #ff99ac;
+}
+}
+.corpo {
+	margin: 0 auto;
+	width: 100%;
+	height: 1200px;
+	background-color: #FCE5E5; 
+} 
+.galeria img{
+	width: 100%;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+	float: right;;
+
+}
+.galeria figure{
+	width: 100%;
+
+
+}
+.galeria {
+
+position: absolute;
+	background-color: pink;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	/*margin: 10px;*/
+	padding: 10px;
+}	
+
+
+
+footer {
+	background: linear-gradient(#ffe6ea, pink);
+	clear: both;
+	padding: 5px 0;
+}
+
+.logofooter {
+	position: relative;
+	width:  128px;
+	margin-bottom: -45px;
+}
+
+.footerhr {
+	margin-top: -8px;
+	margin-bottom: 0px;
+}
+
+.social {
+	float: right;
+	position: relative;
+	right: 25px;
+	top: 10px;
+}
+
+.social li{
+	position: relative;
+	list-style-type: none;
+	top: 70px;
+	float: left;
+	margin-left: 10px;
+}
+
+.social a{
+	width: 48px;
+	height: 48px;
+	display: block;
+	text-indent: -9999px;
+}
+
+.social a:hover {
+	filter: brightness(200%)
+}
+
+.social a[href*="facebook.com"]{
+	background-image: url(../img/facebook.png);
+}
+.social a[href*="instagram.com"]{
+	background-image: url(../img/instagram.png);
+}
+
+
+.copyright {
+	position: relative;
+	color: hotpink;
+	font-size: 18px;
+	bottom: -30px;
+}
